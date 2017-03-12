@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseURL</key>
+	<string>https://query.data.world/sparql/zika-virus-data/mosquito-data</string>
+	<key>followRedirect</key>
+	<true/>
+	<key>handleJSONPCallbacks</key>
+	<false/>
+	<key>headers</key>
+	<array>
+		<dict>
+			<key>header</key>
+			<string>Accept</string>
+			<key>inUse</key>
+			<true/>
+			<key>value</key>
+			<string>application/sparql-results+json</string>
+		</dict>
+		<dict>
+			<key>header</key>
+			<string>Authorization</string>
+			<key>inUse</key>
+			<true/>
+			<key>value</key>
+			<string>Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcm9kLXVzZXItY2xpZW50OnJkbXBhZ2UiLCJpc3MiOiJhZ2VudDpyZG1wYWdlOjpjNDZlNWQ2Mi1hZDY2LTRjY2UtYjI1Yy1lYzZhZTliZTBjN2QiLCJpYXQiOjE0ODI1MjMyMjgsInJvbGUiOlsidXNlcl9hcGlfd3JpdGUiLCJ1c2VyX2FwaV9yZWFkIl0sImdlbmVyYWwtcHVycG9zZSI6dHJ1ZX0.LDBWkhmYok750FcMy5k6ave2sb1Thv-xLjNrVqQTkKKzFBM617H79kRu09hdnfGAubxmWGQM-w9t6IMcdUjLzw</string>
+		</dict>
+	</array>
+	<key>httpMethod</key>
+	<string>POST</string>
+	<key>jsonpScript</key>
+	<string></string>
+	<key>paramBodyUIChoice</key>
+	<integer>0</integer>
+	<key>parameters</key>
+	<array>
+		<dict>
+			<key>inUse</key>
+			<true/>
+			<key>parameter</key>
+			<string>query</string>
+			<key>value</key>
+			<string>SELECT ?id ?lat ?lon
+WHERE {
+  ?row &lt;http://data.world/zika-virus-data/mosquito-data/aegypti_albopictus.csv/aegypti_albopictus#OCCURRENCE_ID&gt; ?id .
+  ?row &lt;http://data.world/zika-virus-data/mosquito-data/aegypti_albopictus.csv/aegypti_albopictus#X_raw&gt;  ?lat .
+  ?row &lt;http://data.world/zika-virus-data/mosquito-data/aegypti_albopictus.csv/aegypti_albopictus#Y_raw&gt;  ?lon .
+
+}
+LIMIT 10</string>
+		</dict>
+	</array>
+	<key>parametersType</key>
+	<integer>0</integer>
+	<key>presentBeforeChallenge</key>
+	<false/>
+	<key>stringEncoding</key>
+	<integer>4</integer>
+	<key>usingHTTPBody</key>
+	<false/>
+</dict>
+</plist>
