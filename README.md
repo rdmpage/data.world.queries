@@ -3,7 +3,7 @@ Example queries for data on data.world. For some documentation see https://meta.
 
 ## SPARQL endpoint
 
-The SPARQL endpoint is https://query.data.world/sparql/<data> where <data> is the name of the data set. For example, for https://data.world/zika-virus-data/mosquito-data the data set is  **zika-virus-data/mosquito-data**, so the SPARQL endpoint is https://query.data.world/sparql/zika-virus-data/mosquito-data
+The SPARQL endpoint is https://query.data.world/sparql/&lt;data&gt; where &lt;data&gt; is the name of the data set. For example, for https://data.world/zika-virus-data/mosquito-data the data set is  **zika-virus-data/mosquito-data**, so the SPARQL endpoint is https://query.data.world/sparql/zika-virus-data/mosquito-data
 
 To query the endpoint you need to authorise the query using your API key, which you get from your settings page https://data.world/settings/advanced . Put this value in the “Authorisation” header.
 
